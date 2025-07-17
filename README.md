@@ -54,7 +54,7 @@ crucible update
 ```
 
 
-# Gettings results
+# Getting results
 
 Get the run-id of your latest run:
 ```
@@ -105,7 +105,7 @@ Available breakouts:  cmd,csid,cstype,job
     fio iops   27014.79
 ```
 
-Crucible metric reporting is done by aggragating all of the various components
+Crucible metric reporting is done by aggregating all of the various components
 that are in scope of the query. The query engine supports the use of breakouts
 to dissect the aggregated metrics should the user desire it. More on that
 below.
@@ -138,7 +138,7 @@ Available breakouts:  cmd,csid,cstype,job
 
 The data collected by the mpstat subtool of the tool-sysstat package is
 sufficiently hierarchical to allow the demonstration of the aggregation
-behaiviors and breakout capabilities that Crucible possesses.  Let's
+behavior and breakout capabilities that Crucible possesses.  Let's
 start by focusing on the Busy-CPU metric to show CPU consumption:
 
 ```
