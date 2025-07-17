@@ -157,7 +157,7 @@ crucible get result --run cccaaab6-1198-4605-bfac-1ad40ec944a3
 
 The output of this command should be very similar to the above result.
 
-### Querying for indivivdual sample data
+### Querying for individual sample data
 
 Individual samples are currently denoted by the time period in which they ran -- so to query for that data you need to determine the period-id.
 
@@ -187,7 +187,7 @@ Available breakouts:  cmd,csid,cstype,job
     fio iops   27014.79
 ```
 
-Crucible metric reporting is done by aggragating all of the various components that in scope of the query.  The query engine supports the use of breakouts to disect the aggregated metrics should the user desire it.  More on that below.
+Crucible metric reporting is done by aggregating all of the various components that in scope of the query.  The query engine supports the use of breakouts to disect the aggregated metrics should the user desire it.  More on that below.
 
 ### Getting additional metrics
 
@@ -209,7 +209,7 @@ Available breakouts:  cmd,csid,cstype,job
 
 #### mpstat
 
-The data collected by the mpstat subtool of the tool-sysstat package is sufficiently hierarchical to allow the demonstration of the aggregation behaiviors and breakout capabilities that Crucible possesses.  Let's start by focusing on the Busy-CPU metric to show CPU consumption:
+The data collected by the mpstat subtool of the tool-sysstat package is sufficiently hierarchical to allow the demonstration of the aggregation behaviors and breakout capabilities that Crucible possesses.  Let's start by focusing on the Busy-CPU metric to show CPU consumption:
 
 ```
 [root@localhost ~]# crucible get metric --run cccaaab6-1198-4605-bfac-1ad40ec944a3 --period 80C41BF2-5F08-11EE-81F5-69C587B7B1D5 --source mpstat --type Busy-CPU
@@ -275,4 +275,4 @@ You can see that the majority of Busy-CPU time was spent in system (ie. kernel) 
 
 ## Summary
 
-This example demonstrats how to run a simple fio workload and use the Crucible query engine to analyze the behavior of the system while the workload is running.  What is shown here is a very small subset of the queries that could be run on this data.  I would encourage you to experiment with the query engine beyond what is shown here in order to learn what you can do with it.
+This example demonstrates how to run a simple fio workload and use the Crucible query engine to analyze the behavior of the system while the workload is running.  What is shown here is a very small subset of the queries that could be run on this data.  I would encourage you to experiment with the query engine beyond what is shown here in order to learn what you can do with it.
